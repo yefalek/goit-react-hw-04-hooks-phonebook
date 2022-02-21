@@ -1,0 +1,54 @@
+.form {
+  max-width: 600px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 13px 73px 13px 13px;
+  -moz-border-radius: 13px 73px 13px 13px;
+  -webkit-border-radius: 13px 73px 13px 13px;
+  border: 0px double #000000;
+  background: linear-gradient(
+    to right,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 50%,
+    rgba(206, 199, 236, 1) 51%,
+    rgba(193, 191, 234, 1) 100%
+  );
+}
+.input {
+  margin: 0px 10px 0px 10px;
+}
+.button {
+  width: 90px;
+  height: 30px;
+  margin: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(226, 226, 226) 0%,
+    rgb(57, 150, 150) 100%
+  );
+  color: #27355a;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: none;
+}
+.button:active {
+  background: linear-gradient(
+    to bottom,
+    rgba(57, 150, 150) 0%,
+    rgb(226, 226, 226) 100%
+  );
+  color: #fff;
+  -webkit-box-shadow: inset 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  transform: translateY(4px);
+}

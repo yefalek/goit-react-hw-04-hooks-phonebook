@@ -1,0 +1,53 @@
+ul {
+  padding-left: 10px;
+}
+.list {
+  width: 600px;
+  margin-left: 20px;
+  list-style: none;
+  background: linear-gradient(
+    to right,
+    rgba(237, 237, 237, 0.95) 0%,
+    rgba(246, 246, 246, 0.98) 10%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
+
+.item {
+  width: 100%;
+}
+.item button {
+  width: 90px;
+  height: 30px;
+  margin: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(226, 226, 226) 0%,
+    rgb(57, 150, 150) 100%
+  );
+  color: #27355a;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  border: none;
+}
+.item button:active {
+  background: linear-gradient(
+    to bottom,
+    rgba(57, 150, 150) 0%,
+    rgb(226, 226, 226) 100%
+  );
+  color: #fff;
+  -webkit-box-shadow: inset 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 2px 3px 4 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 2px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  transform: translateY(4px);
+}

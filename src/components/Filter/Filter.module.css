@@ -1,0 +1,16 @@
+.input {
+  max-width: 600px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 13px 73px 13px 13px;
+  -moz-border-radius: 13px 73px 13px 13px;
+  -webkit-border-radius: 13px 73px 13px 13px;
+  border: 0px double #000000;
+  background: linear-gradient(
+    to right,
+    rgba(235, 233, 249, 1) 0%,
+    rgba(216, 208, 239, 1) 50%,
+    rgba(206, 199, 236, 1) 51%,
+    rgba(193, 191, 234, 1) 100%
+  );
+}
