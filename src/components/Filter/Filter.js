@@ -1,16 +1,16 @@
+import React from "react";
 import s from "./Filter.module.css";
 
-const Filter = ({ filter, onChange }) => {
+export default function Filter({ value, onChange }) {
   return (
     <div className={s.input}>
       <input
         type="text"
         name="filter"
-        value={filter}
-        onChange={({ target }) => onChange(target.value)}
+        value={value}
+        onChange={onChange}
         placeholder="Search..."
       />
     </div>
   );
-};
-export default Filter;
+}
