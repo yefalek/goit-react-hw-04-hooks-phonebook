@@ -7,9 +7,7 @@ import "./App.css";
 
 export default function App() {
 
-  const [filter, setFilter] = useState("");
   const [contacts, setContacts] = useState(() => {
-
     return JSON.parse(localStorage.getItem("contacts")) ?? [
       { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
       { id: "id-2", name: "Hermione Kline", number: "443-89-12" },
@@ -17,7 +15,8 @@ export default function App() {
       { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
     ];
   });
-  
+
+  const [filter, setFilter] = useState("");
 
   useEffect(() => { window.localStorage.setItem("contacts", JSON.stringify(contacts)); }, [contacts]);
 
@@ -26,14 +25,14 @@ export default function App() {
     contacts.some((e) => e.name === name)?alert("Contact is already exist") : setContacts([contact, ...contacts]);
   }
   
-  const RemoveContact = (id) => {setContacts(contacts.filter((contact) => contact.id !== id));};
-
-  const FilterChange = (e) => { setFilter(e.currentTarget.value)};
+  const FilterChange = e => { setFilter(e.currentTarget.value)};
 
   const getVisibleContacts = () => {
     return contacts.filter(({name}) => name.toLowerCase().includes(filter.toLowerCase()),);
   };
 
+  const RemoveContact = (id) => { setContacts(contacts.filter((e) => e.id !== id)); };
+  
     return (
       <>
         <h2>Form Contact</h2>
@@ -44,7 +43,7 @@ export default function App() {
         <h2>Contacts list</h2>
         <Filter value={filter} onChange={FilterChange} />
         <ContactsList
-          contacts={getVisibleContacts}
+          contacts={getVisibleContacts()}
           onRemove={RemoveContact}
         />
       </>

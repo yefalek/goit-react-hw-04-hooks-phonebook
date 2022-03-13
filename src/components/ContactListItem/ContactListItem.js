@@ -5,7 +5,7 @@ const ContactListItem = ({ contacts, onRemove }) =>
   contacts.map(({ id, name, number }) => {
     return (
       <li key={id} className={s.item}>
-            {name}:{number}
+            {name}: {number}
             <button onClick={() => onRemove(id)} type="button"> Remove </button>
       </li>
     );
